@@ -2,7 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
+// Arquivo de Rotas:
 import { ROUTES } from './app.routes'
 
 // Components:
@@ -22,7 +24,7 @@ import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
 // Services:
 import { RestaurantsService } from './restaurants/restaurants.service';
 import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service';
-
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +39,14 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
     MenuComponent,
     MenuItemComponent,
     ShoppingCartComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule,
+    FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [
