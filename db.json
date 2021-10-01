@@ -370,5 +370,27 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "Rua do Meio",
+      "number": 5,
+      "optionalAddress": "Bem no meio mesmo",
+      "paymentOption": "BOL",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "capp"
+        },
+        {
+          "quantity": 1,
+          "menuId": "espreso"
+        },
+        {
+          "quantity": 1,
+          "menuId": "starb"
+        }
+      ],
+      "id": 1
+    }
+  ]
 }
